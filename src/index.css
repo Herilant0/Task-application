@@ -108,3 +108,8 @@ footer {
   margin-top: 30px;
   text-align: center;
 }
+
+.logo {
+  font-style: italic;
+  font-size: 2em;
+}
