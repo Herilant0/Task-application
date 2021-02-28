@@ -11,11 +11,11 @@ const AddTask = () => {
                 <input type='text' placeholder='Day/time' />
             </div>
 
-            <div className='form-control'>
+            <div className='form-control form-control-check'>
                 <lalel>Set reminder</lalel>
                 <input type='checkbox' />
             </div>
-            <input type='submit' value='Save'/>
+            <input type='submit' value='Save' className='btn btn-block'/>
 
         </form>
     )
