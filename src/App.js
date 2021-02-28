@@ -1,10 +1,8 @@
 import { useState } from 'react'
-import {BroswerRouter as Router, Route} from 'react-router-dom'
 import Header from '../src/components/Header'
 import Footer from '../src/components/Footer'
 import Tasks from '../src/components/Tasks'
 import AddTask from '../src/components/AddTask'
-import About from '../src/components/About'
 
 const App = () => {
   const [showAddTask, setShowAddTask] = useState(false)
@@ -47,15 +45,12 @@ const App = () => {
   }
 
   return (
-    <Router>
     <div className="container">
       <Header onAdd={() => setShowAddTask(!showAddTask)} showAdd={showAddTask} />
       {showAddTask && <AddTask onAdd={addTask} />}
       {tasks.length > 0 ? <Tasks tasks={tasks} onDelete={deleteTask} onToggle={toggleReminder} /> : 'No tasks to show here !'}
-      <Route path='/about' component={About}/>
       <Footer />
     </div>
-    </Router>
   );
 }
 
