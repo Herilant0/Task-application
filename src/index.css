@@ -39,12 +39,13 @@ body {
   font-family: inherit;
 }
 
-.bnt:focus {
+.btn:focus {
   outline: none;
 }
 
 .btn:active {
   transform: scale(0.98);
+  outline: none;
 }
 
 .btn-block {
